@@ -21,6 +21,12 @@ public class MadLib {
 		this.adjective = adjective;
 		this.place = place;
 	}
+	public void setToUpper() {
+		verb = verb.toUpperCase();
+		noun = noun.toUpperCase();
+		adjective = adjective.toUpperCase();
+		place = place.toUpperCase();
+	}
 	public String getVerb() {
 		return verb;
 	}
