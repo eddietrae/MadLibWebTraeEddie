@@ -34,7 +34,7 @@ public class getWordsServlet extends HttpServlet {
 		String place= request.getParameter("place");
 		
 		MadLib mad = new MadLib(verb,noun,adj,place);
-		
+		mad.setToLower();
 		request.setAttribute("mad", mad);
 		getServletContext().getRequestDispatcher("/result.jsp").forward(request, response);
 	}

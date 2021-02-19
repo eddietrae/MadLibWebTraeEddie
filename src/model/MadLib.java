@@ -27,6 +27,12 @@ public class MadLib {
 		adjective = adjective.toUpperCase();
 		place = place.toUpperCase();
 	}
+	public void setToLower() {
+		verb = verb.toLowerCase();
+		noun = noun.toLowerCase();
+		adjective = adjective.toLowerCase();
+		place = place.toLowerCase();
+	}
 	public String getVerb() {
 		return verb;
 	}
